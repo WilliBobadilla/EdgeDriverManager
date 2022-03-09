@@ -242,18 +242,7 @@ class EdgeDriverLocal:
                             )
             
 
-    def copy_to_path(self):
-        """
-        Method to copy downloaded driver (.exe) to the other folders of the bots.
-            
-            Params: 
-                None
-            Returns: 
-                None
-        """
-        for folder in self.BOT_FOLDERS:
-            shutil.copy2(self.DRIVER_NAME, folder)
-        self.print_and_log(f"Copied to folders: {self.BOT_FOLDERS}")
+
 
 if __name__=="__main__":
     s = EdgeDriverLocal()
@@ -267,8 +256,4 @@ if __name__=="__main__":
                             "Error en driver"
                             )
                 exit()
-            else: # another version works, so let's copy to the others folder
-                s.copy_to_path()
-        else: # downloaded version works, so let's copy to the others folder
-            s.copy_to_path()
     s.print_and_log("Driver working, all right") #log the message
