@@ -5,3 +5,5 @@ This script is to have updated the local **msedgedriver.exe file**, that basical
 1. Clone the repository
 
 2. Create a virtual enviroment
+
+..................
